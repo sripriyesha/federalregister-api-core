@@ -1,4 +1,4 @@
-class CreateIssueApprovals < ActiveRecord::Migration
+class CreateIssueApprovals < ActiveRecord::Migration[6.0]
   def self.up
     create_table :issue_approvals do |t|
       t.date :publication_date

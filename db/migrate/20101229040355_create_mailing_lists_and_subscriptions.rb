@@ -1,4 +1,4 @@
-class CreateMailingListsAndSubscriptions < ActiveRecord::Migration
+class CreateMailingListsAndSubscriptions < ActiveRecord::Migration[6.0]
   def self.up
     create_table :mailing_lists do |t|
       t.text     :parameters

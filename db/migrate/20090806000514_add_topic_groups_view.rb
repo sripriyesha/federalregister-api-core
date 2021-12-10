@@ -1,4 +1,4 @@
-class AddTopicGroupsView < ActiveRecord::Migration
+class AddTopicGroupsView < ActiveRecord::Migration[6.0]
   def self.up
     execute "CREATE VIEW topic_groups
              AS SELECT group_name, name, SUM(entries_count) AS entries_count

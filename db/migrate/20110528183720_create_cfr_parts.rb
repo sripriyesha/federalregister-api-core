@@ -1,4 +1,4 @@
-class CreateCfrParts < ActiveRecord::Migration
+class CreateCfrParts < ActiveRecord::Migration[6.0]
   def self.up
     create_table :cfr_parts do |t|
       t.integer :year

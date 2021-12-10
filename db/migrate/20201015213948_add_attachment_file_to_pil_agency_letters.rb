@@ -1,4 +1,4 @@
-class AddAttachmentFileToPilAgencyLetters < ActiveRecord::Migration[6.0]
+class AddAttachmentFileToPilAgencyLetters < ActiveRecord::Migration[6.0][6.0]
   def self.up
     change_table :pil_agency_letters do |t|
       t.attachment :file

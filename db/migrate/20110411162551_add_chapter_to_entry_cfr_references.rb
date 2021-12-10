@@ -1,4 +1,4 @@
-class AddChapterToEntryCfrReferences < ActiveRecord::Migration
+class AddChapterToEntryCfrReferences < ActiveRecord::Migration[6.0]
   def self.up
     add_column :entry_cfr_references, :chapter, :integer
   end

@@ -1,4 +1,4 @@
-class FixAgenciesEntriesCountCounterCache < ActiveRecord::Migration
+class FixAgenciesEntriesCountCounterCache < ActiveRecord::Migration[6.0]
   def self.up
     # not all agencies have entries, so wouldn't be matched by the query that does the real calculation
     execute "UPDATE agencies SET entries_count = 0"

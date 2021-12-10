@@ -1,4 +1,4 @@
-class ConvertAgencyCfrCitationToText < ActiveRecord::Migration
+class ConvertAgencyCfrCitationToText < ActiveRecord::Migration[6.0]
   def self.up
     change_column :agencies, :cfr_citation, :text
   end

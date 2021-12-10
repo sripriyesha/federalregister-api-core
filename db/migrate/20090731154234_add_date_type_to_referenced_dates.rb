@@ -1,4 +1,4 @@
-class AddDateTypeToReferencedDates < ActiveRecord::Migration
+class AddDateTypeToReferencedDates < ActiveRecord::Migration[6.0]
   def self.up
     add_column :referenced_dates, :date_type, :string
     remove_column :referenced_dates, :prospective

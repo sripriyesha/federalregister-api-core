@@ -1,4 +1,4 @@
-class OverhaulAgencyAssignmentProcess < ActiveRecord::Migration
+class OverhaulAgencyAssignmentProcess < ActiveRecord::Migration[6.0]
   def self.up
     create_table :agency_names do |t|
       t.string :name, :null => false

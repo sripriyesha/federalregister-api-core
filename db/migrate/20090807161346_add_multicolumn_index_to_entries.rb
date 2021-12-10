@@ -1,4 +1,4 @@
-class AddMulticolumnIndexToEntries < ActiveRecord::Migration
+class AddMulticolumnIndexToEntries < ActiveRecord::Migration[6.0]
   def self.up
     add_index :entries, [:agency_id, :publication_date]
     add_index :entries, [:publication_date, :agency_id]

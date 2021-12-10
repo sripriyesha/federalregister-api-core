@@ -1,4 +1,4 @@
-class AddGpoGraphics < ActiveRecord::Migration
+class AddGpoGraphics < ActiveRecord::Migration[6.0]
   def self.up
     create_table :gpo_graphics do |t|
       t.string   :identifier

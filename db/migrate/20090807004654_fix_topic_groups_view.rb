@@ -1,4 +1,4 @@
-class FixTopicGroupsView < ActiveRecord::Migration
+class FixTopicGroupsView < ActiveRecord::Migration[6.0]
   def self.up
     execute "ALTER VIEW topic_groups
              AS SELECT group_name, name, SUM(entries_count) AS entries_count

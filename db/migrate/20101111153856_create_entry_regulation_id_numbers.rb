@@ -1,4 +1,4 @@
-class CreateEntryRegulationIdNumbers < ActiveRecord::Migration
+class CreateEntryRegulationIdNumbers < ActiveRecord::Migration[6.0]
   def self.up
     create_table :entry_regulation_id_numbers do |t|
       t.integer :entry_id

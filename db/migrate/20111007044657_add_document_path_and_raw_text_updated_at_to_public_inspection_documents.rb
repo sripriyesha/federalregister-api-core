@@ -1,4 +1,4 @@
-class AddDocumentPathAndRawTextUpdatedAtToPublicInspectionDocuments < ActiveRecord::Migration
+class AddDocumentPathAndRawTextUpdatedAtToPublicInspectionDocuments < ActiveRecord::Migration[6.0]
   def self.up
     add_column :public_inspection_documents, :document_file_path, :string
     add_column :public_inspection_documents, :raw_text_updated_at, :datetime

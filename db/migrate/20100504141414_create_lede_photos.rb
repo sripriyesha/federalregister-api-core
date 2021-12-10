@@ -1,4 +1,4 @@
-class CreateLedePhotos < ActiveRecord::Migration
+class CreateLedePhotos < ActiveRecord::Migration[6.0]
   def self.up
     add_column :entries, :lede_photo_id, :integer
     add_column :entries, :lede_photo_candidates, :text

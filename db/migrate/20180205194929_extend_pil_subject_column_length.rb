@@ -1,4 +1,4 @@
-class ExtendPilSubjectColumnLength < ActiveRecord::Migration
+class ExtendPilSubjectColumnLength < ActiveRecord::Migration[6.0]
   def self.up
     change_column :public_inspection_documents, :subject_1, :string, :limit => 1000
     change_column :public_inspection_documents, :subject_2, :string, :limit => 1000

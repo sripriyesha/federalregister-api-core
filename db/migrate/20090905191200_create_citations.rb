@@ -1,4 +1,4 @@
-class CreateCitations < ActiveRecord::Migration
+class CreateCitations < ActiveRecord::Migration[6.0]
   def self.up
     create_table :citations do |t|
       t.integer :source_entry_id

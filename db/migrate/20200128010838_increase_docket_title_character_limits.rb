@@ -1,4 +1,4 @@
-class IncreaseDocketTitleCharacterLimits < ActiveRecord::Migration[6.0]
+class IncreaseDocketTitleCharacterLimits < ActiveRecord::Migration[6.0][6.0]
 
   def change
     change_column :dockets, :title, :string, :limit => 1000

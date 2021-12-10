@@ -1,4 +1,4 @@
-class AddIndexToDockets < ActiveRecord::Migration
+class AddIndexToDockets < ActiveRecord::Migration[6.0]
   def self.up
     execute(<<-SQL)
       CREATE TEMPORARY TABLE dockets_temp

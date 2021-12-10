@@ -1,4 +1,4 @@
-class InitialPopulationOfEntriesSignificant < ActiveRecord::Migration
+class InitialPopulationOfEntriesSignificant < ActiveRecord::Migration[6.0]
   def self.up
     execute("UPDATE entries, entry_regulation_id_numbers, regulatory_plans
     SET entries.significant = 1

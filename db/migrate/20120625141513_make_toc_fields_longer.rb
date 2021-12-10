@@ -1,4 +1,4 @@
-class MakeTocFieldsLonger < ActiveRecord::Migration
+class MakeTocFieldsLonger < ActiveRecord::Migration[6.0]
   def self.up
     change_column :entries, :toc_subject, :string, :limit => 1000
     change_column :entries, :toc_doc, :string, :limit => 1000

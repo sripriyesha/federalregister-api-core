@@ -1,4 +1,4 @@
-class CreateSectionHighlights < ActiveRecord::Migration
+class CreateSectionHighlights < ActiveRecord::Migration[6.0]
   def self.up
     add_column :entries, :headline, :string
 

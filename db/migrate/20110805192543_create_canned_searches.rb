@@ -1,4 +1,4 @@
-class CreateCannedSearches < ActiveRecord::Migration
+class CreateCannedSearches < ActiveRecord::Migration[6.0]
   def self.up
     create_table :canned_searches do |t|
       t.integer :section_id

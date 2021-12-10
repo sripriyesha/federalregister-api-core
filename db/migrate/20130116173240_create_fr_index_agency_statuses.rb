@@ -1,4 +1,4 @@
-class CreateFrIndexAgencyStatuses < ActiveRecord::Migration
+class CreateFrIndexAgencyStatuses < ActiveRecord::Migration[6.0]
   def self.up
     create_table :fr_index_agency_statuses do |t|
       t.integer :year

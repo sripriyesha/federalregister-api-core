@@ -1,4 +1,4 @@
-class RenameMailingListsParametersToSearchConditions < ActiveRecord::Migration
+class RenameMailingListsParametersToSearchConditions < ActiveRecord::Migration[6.0]
   def self.up
     rename_column :mailing_lists, :parameters, :search_conditions
   end

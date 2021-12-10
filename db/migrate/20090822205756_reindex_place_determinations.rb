@@ -1,4 +1,4 @@
-class ReindexPlaceDeterminations < ActiveRecord::Migration
+class ReindexPlaceDeterminations < ActiveRecord::Migration[6.0]
   def self.up
     add_index :place_determinations, ["entry_id", "place_id"]
     add_index :place_determinations, ["place_id", "entry_id"]

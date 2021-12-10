@@ -1,4 +1,4 @@
-class AddFullTextFieldsToEntries < ActiveRecord::Migration
+class AddFullTextFieldsToEntries < ActiveRecord::Migration[6.0]
   def self.up
     add_column :entries, :full_text, :text
     add_column :entries, :full_text_raw, :text

@@ -1,4 +1,4 @@
-class CreateTopicNames < ActiveRecord::Migration
+class CreateTopicNames < ActiveRecord::Migration[6.0]
   def self.up
     create_table :topic_names do |t|
       t.string :name

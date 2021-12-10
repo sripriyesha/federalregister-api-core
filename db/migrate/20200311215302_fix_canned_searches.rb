@@ -1,4 +1,4 @@
-class FixCannedSearches < ActiveRecord::Migration[6.0]
+class FixCannedSearches < ActiveRecord::Migration[6.0][6.0]
   include ConditionsHelper
 
   def change

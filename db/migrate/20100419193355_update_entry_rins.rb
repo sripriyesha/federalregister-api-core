@@ -1,4 +1,4 @@
-class UpdateEntryRins < ActiveRecord::Migration
+class UpdateEntryRins < ActiveRecord::Migration[6.0]
   def self.up
     execute("UPDATE entries SET regulation_id_number = REPLACE(regulation_id_number, 'RIN ', '') WHERE regulation_id_number IS NOT NULL")
   end

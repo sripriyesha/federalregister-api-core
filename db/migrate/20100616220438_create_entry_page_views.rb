@@ -1,4 +1,4 @@
-class CreateEntryPageViews < ActiveRecord::Migration
+class CreateEntryPageViews < ActiveRecord::Migration[6.0]
   def self.up
     create_table :entry_page_views do |t|
       t.integer :entry_id, :nil => false

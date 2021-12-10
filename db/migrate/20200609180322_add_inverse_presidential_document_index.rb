@@ -1,4 +1,4 @@
-class AddInversePresidentialDocumentIndex < ActiveRecord::Migration[6.0]
+class AddInversePresidentialDocumentIndex < ActiveRecord::Migration[6.0][6.0]
   def change
     add_index "entries",
       ["presidential_document_number","presidential_document_type_id"],

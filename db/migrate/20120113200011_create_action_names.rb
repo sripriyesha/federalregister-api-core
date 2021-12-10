@@ -1,4 +1,4 @@
-class CreateActionNames < ActiveRecord::Migration
+class CreateActionNames < ActiveRecord::Migration[6.0]
   def self.up
     create_table :action_names do |t|
       t.string :name

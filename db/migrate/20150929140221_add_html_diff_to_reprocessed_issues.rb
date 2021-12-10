@@ -1,4 +1,4 @@
-class AddHtmlDiffToReprocessedIssues < ActiveRecord::Migration
+class AddHtmlDiffToReprocessedIssues < ActiveRecord::Migration[6.0]
   def self.up
     add_column :reprocessed_issues, :html_diff, :text
   end

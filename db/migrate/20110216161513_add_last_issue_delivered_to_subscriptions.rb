@@ -1,4 +1,4 @@
-class AddLastIssueDeliveredToSubscriptions < ActiveRecord::Migration
+class AddLastIssueDeliveredToSubscriptions < ActiveRecord::Migration[6.0]
   def self.up
     add_column :subscriptions, :last_issue_delivered, :date
   end

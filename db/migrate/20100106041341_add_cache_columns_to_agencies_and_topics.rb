@@ -1,4 +1,4 @@
-class AddCacheColumnsToAgenciesAndTopics < ActiveRecord::Migration
+class AddCacheColumnsToAgenciesAndTopics < ActiveRecord::Migration[6.0]
   def self.up
     add_column :agencies, :related_topics_cache,   :text
     add_column :topics,   :related_topics_cache,   :text

@@ -1,4 +1,4 @@
-class AddCorrectionOfIdToEntries < ActiveRecord::Migration
+class AddCorrectionOfIdToEntries < ActiveRecord::Migration[6.0]
   def self.up
     add_column :entries, :correction_of_id, :integer
     add_index :entries, :correction_of_id, :name => "index_entries_on_correction_of"

@@ -1,4 +1,4 @@
-class CreateSectionAssignments < ActiveRecord::Migration
+class CreateSectionAssignments < ActiveRecord::Migration[6.0]
   def self.up
     create_table :section_assignments do |t|
       t.integer :entry_id

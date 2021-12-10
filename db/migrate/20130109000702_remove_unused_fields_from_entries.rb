@@ -1,4 +1,4 @@
-class RemoveUnusedFieldsFromEntries < ActiveRecord::Migration
+class RemoveUnusedFieldsFromEntries < ActiveRecord::Migration[6.0]
   def self.up
     remove_column :entries, :type, :link, :genre, :length, :slug
   end

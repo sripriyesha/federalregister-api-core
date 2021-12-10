@@ -1,4 +1,4 @@
-class AddLogoToAgencies < ActiveRecord::Migration
+class AddLogoToAgencies < ActiveRecord::Migration[6.0]
   def self.up
     add_column :agencies, :logo_file_name,    :string
     add_column :agencies, :logo_content_type, :string

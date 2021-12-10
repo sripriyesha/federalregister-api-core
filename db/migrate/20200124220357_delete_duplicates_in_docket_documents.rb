@@ -1,4 +1,4 @@
-class DeleteDuplicatesInDocketDocuments < ActiveRecord::Migration[6.0]
+class DeleteDuplicatesInDocketDocuments < ActiveRecord::Migration[6.0][6.0]
 
   def change
 

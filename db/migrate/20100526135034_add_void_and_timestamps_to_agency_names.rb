@@ -1,4 +1,4 @@
-class AddVoidAndTimestampsToAgencyNames < ActiveRecord::Migration
+class AddVoidAndTimestampsToAgencyNames < ActiveRecord::Migration[6.0]
   def self.up
     add_column :agency_names, :void, :boolean, :default => false
     add_column :agency_names, :created_at, :datetime

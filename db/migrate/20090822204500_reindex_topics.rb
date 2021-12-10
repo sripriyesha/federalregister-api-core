@@ -1,4 +1,4 @@
-class ReindexTopics < ActiveRecord::Migration
+class ReindexTopics < ActiveRecord::Migration[6.0]
   def self.up
     add_index :topics, [:group_name, :id]
     remove_index :topics, :group_name

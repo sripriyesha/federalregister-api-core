@@ -1,4 +1,4 @@
-class AddStatisticsToSubscriptions < ActiveRecord::Migration
+class AddStatisticsToSubscriptions < ActiveRecord::Migration[6.0]
   def self.up
     add_column :subscriptions, :last_delivered_at, :datetime
     add_column :subscriptions, :delivery_count, :integer, :default => 0, :nil => false

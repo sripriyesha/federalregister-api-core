@@ -1,4 +1,4 @@
-class AddEntriesCountToTopics < ActiveRecord::Migration
+class AddEntriesCountToTopics < ActiveRecord::Migration[6.0]
   def self.up
     add_column :topics, :entries_count, :integer, :default => 0
     add_index :topics, :entries_count

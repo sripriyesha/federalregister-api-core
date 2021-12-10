@@ -1,4 +1,4 @@
-class CreatePlaceDeterminations < ActiveRecord::Migration
+class CreatePlaceDeterminations < ActiveRecord::Migration[6.0]
   def self.up
     create_table :place_determinations do |t|
       t.belongs_to :entry

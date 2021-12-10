@@ -1,4 +1,4 @@
-class CreateReprocessedIssues < ActiveRecord::Migration
+class CreateReprocessedIssues < ActiveRecord::Migration[6.0]
   def self.up
     create_table :reprocessed_issues do |t|
       t.integer :issue_id

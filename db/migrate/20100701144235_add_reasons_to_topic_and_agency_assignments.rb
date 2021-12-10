@@ -1,4 +1,4 @@
-class AddReasonsToTopicAndAgencyAssignments < ActiveRecord::Migration
+class AddReasonsToTopicAndAgencyAssignments < ActiveRecord::Migration[6.0]
   def self.up
     add_column :topic_assignments, :topics_topic_name_id, :integer
     add_column :agency_assignments, :agency_name_id, :integer

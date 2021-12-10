@@ -1,4 +1,4 @@
-class AddGroupNameToTopics < ActiveRecord::Migration
+class AddGroupNameToTopics < ActiveRecord::Migration[6.0]
   def self.up
     add_column :topics, :group_name, :string
     add_index :topics, :group_name

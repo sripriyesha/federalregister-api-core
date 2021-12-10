@@ -1,4 +1,4 @@
-class AddCountsToPublicInspectionIssues < ActiveRecord::Migration
+class AddCountsToPublicInspectionIssues < ActiveRecord::Migration[6.0]
   def self.up
     add_column :public_inspection_issues, :special_filing_documents_count, :integer
     add_column :public_inspection_issues, :special_filing_agencies_count, :integer

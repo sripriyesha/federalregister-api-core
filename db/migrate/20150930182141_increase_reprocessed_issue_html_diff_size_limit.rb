@@ -1,4 +1,4 @@
-class IncreaseReprocessedIssueHtmlDiffSizeLimit < ActiveRecord::Migration
+class IncreaseReprocessedIssueHtmlDiffSizeLimit < ActiveRecord::Migration[6.0]
   def self.up
     change_column :reprocessed_issues, :html_diff, :text, :limit => 16777215
   end

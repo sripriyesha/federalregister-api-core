@@ -1,4 +1,4 @@
-class AddPresdocuDetailsToEntries < ActiveRecord::Migration
+class AddPresdocuDetailsToEntries < ActiveRecord::Migration[6.0]
   def self.up
     add_column :entries, :presidential_document_type_id, :integer
     add_column :entries, :signing_date, :date

@@ -1,4 +1,4 @@
-class AddTimestampsToPublicInspectionIssues < ActiveRecord::Migration
+class AddTimestampsToPublicInspectionIssues < ActiveRecord::Migration[6.0]
   def self.up
     add_column :public_inspection_issues, :created_at, :datetime
     add_column :public_inspection_issues, :updated_at, :datetime

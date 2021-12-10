@@ -1,4 +1,4 @@
-class CreateEntryGraphics < ActiveRecord::Migration
+class CreateEntryGraphics < ActiveRecord::Migration[6.0]
   def self.up
     create_table :graphics do |t|
       t.string   :identifier

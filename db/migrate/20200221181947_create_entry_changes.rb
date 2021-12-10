@@ -1,4 +1,4 @@
-class CreateEntryChanges < ActiveRecord::Migration[6.0]
+class CreateEntryChanges < ActiveRecord::Migration[6.0][6.0]
   def change
     create_table :entry_changes do |t|
       t.integer :entry_id

@@ -1,4 +1,4 @@
-class CreateEntryDetails < ActiveRecord::Migration
+class CreateEntryDetails < ActiveRecord::Migration[6.0]
   def self.up
     create_table :entry_details do |t|
       t.integer :entry_id

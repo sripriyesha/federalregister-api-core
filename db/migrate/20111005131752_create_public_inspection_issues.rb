@@ -1,4 +1,4 @@
-class CreatePublicInspectionIssues < ActiveRecord::Migration
+class CreatePublicInspectionIssues < ActiveRecord::Migration[6.0]
   def self.up
     create_table :public_inspection_issues do |t|
       t.date :publication_date

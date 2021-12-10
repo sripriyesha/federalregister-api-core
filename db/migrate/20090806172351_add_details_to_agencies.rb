@@ -1,4 +1,4 @@
-class AddDetailsToAgencies < ActiveRecord::Migration
+class AddDetailsToAgencies < ActiveRecord::Migration[6.0]
   def self.up
     add_column :agencies, :agency_type, :string
     add_column :agencies, :short_name, :string

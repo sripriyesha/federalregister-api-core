@@ -1,4 +1,4 @@
-class ChangeLastCompletedAtToLastCompletedIssue < ActiveRecord::Migration
+class ChangeLastCompletedAtToLastCompletedIssue < ActiveRecord::Migration[6.0]
   def self.up
     rename_column :fr_index_agency_statuses, :last_completed_at, :last_completed_issue
     change_column :fr_index_agency_statuses, :last_completed_issue, :date

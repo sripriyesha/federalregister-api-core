@@ -1,4 +1,4 @@
-class AddPresidentialDocumentNumberToEntries < ActiveRecord::Migration
+class AddPresidentialDocumentNumberToEntries < ActiveRecord::Migration[6.0]
 
   def self.up
     add_column :entries, :presidential_document_number, :string

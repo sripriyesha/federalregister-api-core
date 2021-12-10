@@ -1,4 +1,4 @@
-class AddMoreDetailsToEntries < ActiveRecord::Migration
+class AddMoreDetailsToEntries < ActiveRecord::Migration[6.0]
   def self.up
     add_column :entries, :source_text_url, :string
 

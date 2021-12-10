@@ -1,4 +1,4 @@
-class AssignPrimaryKeyToDocketDocuments < ActiveRecord::Migration[6.0]
+class AssignPrimaryKeyToDocketDocuments < ActiveRecord::Migration[6.0][6.0]
 
   def up
     execute "ALTER TABLE docket_documents ADD PRIMARY KEY (id);"

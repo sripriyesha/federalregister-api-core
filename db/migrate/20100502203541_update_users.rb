@@ -1,4 +1,4 @@
-class UpdateUsers < ActiveRecord::Migration
+class UpdateUsers < ActiveRecord::Migration[6.0]
   def self.up
     create_table "users", :force => true do |t|
       t.string   "email",                                 :null => false

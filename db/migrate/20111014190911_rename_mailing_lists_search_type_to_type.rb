@@ -1,4 +1,4 @@
-class RenameMailingListsSearchTypeToType < ActiveRecord::Migration
+class RenameMailingListsSearchTypeToType < ActiveRecord::Migration[6.0]
   def self.up
     rename_column :mailing_lists, :search_type, :type
     connection.execute("UPDATE mailing_lists SET type = 'MailingList::Entry' WHERE type = 'Entry'")

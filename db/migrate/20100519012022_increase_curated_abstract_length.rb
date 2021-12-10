@@ -1,4 +1,4 @@
-class IncreaseCuratedAbstractLength < ActiveRecord::Migration
+class IncreaseCuratedAbstractLength < ActiveRecord::Migration[6.0]
   def self.up
     change_column :entries, :curated_abstract, :string, :limit => 500
   end

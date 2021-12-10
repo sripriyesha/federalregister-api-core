@@ -1,4 +1,4 @@
-class ChangeDocketTitleColumnCharacterSet < ActiveRecord::Migration[6.0]
+class ChangeDocketTitleColumnCharacterSet < ActiveRecord::Migration[6.0][6.0]
   def up
     ActiveRecord::Base.connection.execute("ALTER TABLE dockets MODIFY title VARCHAR(255) CHARACTER SET utf8mb4;")
   end

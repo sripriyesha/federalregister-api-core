@@ -1,4 +1,4 @@
-class AddIndexesToEntries < ActiveRecord::Migration
+class AddIndexesToEntries < ActiveRecord::Migration[6.0]
   def self.up
     add_index :entries, :citation
     add_index :entries, :publication_date

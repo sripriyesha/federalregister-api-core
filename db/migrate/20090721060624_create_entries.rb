@@ -1,4 +1,4 @@
-class CreateEntries < ActiveRecord::Migration
+class CreateEntries < ActiveRecord::Migration[6.0]
   def self.up
     create_table :entries do |t|
       t.text :title, :abstract, :contact, :dates, :action

@@ -1,4 +1,4 @@
-class CreateGeneratedFiles < ActiveRecord::Migration
+class CreateGeneratedFiles < ActiveRecord::Migration[6.0]
   def self.up
     create_table :generated_files do |t|
       t.string :parameters

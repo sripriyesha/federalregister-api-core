@@ -1,4 +1,4 @@
-class AddMoreIndexesToPlaceDeterminations < ActiveRecord::Migration
+class AddMoreIndexesToPlaceDeterminations < ActiveRecord::Migration[6.0]
   def self.up
     remove_index "place_determinations", :name => "index_place_determinations_on_entry_id_and_confidence"
     remove_index "place_determinations", :name => "index_place_determinations_on_entry_id_and_place_id"

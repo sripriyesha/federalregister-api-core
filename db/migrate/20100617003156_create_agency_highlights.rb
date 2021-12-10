@@ -1,4 +1,4 @@
-class CreateAgencyHighlights < ActiveRecord::Migration
+class CreateAgencyHighlights < ActiveRecord::Migration[6.0]
   def self.up
     create_table :agency_highlights do |t|
       t.integer :entry_id

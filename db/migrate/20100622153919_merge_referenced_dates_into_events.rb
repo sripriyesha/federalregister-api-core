@@ -1,4 +1,4 @@
-class MergeReferencedDatesIntoEvents < ActiveRecord::Migration
+class MergeReferencedDatesIntoEvents < ActiveRecord::Migration[6.0]
   def self.up
     add_column :events, :event_type, :string
     execute "UPDATE events SET event_type = 'PublicMeeting'"

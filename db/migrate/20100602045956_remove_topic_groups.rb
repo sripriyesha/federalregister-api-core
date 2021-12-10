@@ -1,4 +1,4 @@
-class RemoveTopicGroups < ActiveRecord::Migration
+class RemoveTopicGroups < ActiveRecord::Migration[6.0]
   def self.up
     execute "DROP VIEW topic_groups"
     rename_column :topics, :group_name, :slug

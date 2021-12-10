@@ -1,4 +1,4 @@
-class CreatePilAgencyLetters < ActiveRecord::Migration[6.0]
+class CreatePilAgencyLetters < ActiveRecord::Migration[6.0][6.0]
   def change
     create_table :pil_agency_letters do |t|
       t.integer :public_inspection_document_id

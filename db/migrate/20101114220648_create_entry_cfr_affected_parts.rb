@@ -1,4 +1,4 @@
-class CreateEntryCfrAffectedParts < ActiveRecord::Migration
+class CreateEntryCfrAffectedParts < ActiveRecord::Migration[6.0]
   def self.up
     create_table :entry_cfr_affected_parts do |t|
       t.integer :entry_id

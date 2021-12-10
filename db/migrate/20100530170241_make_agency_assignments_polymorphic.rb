@@ -1,4 +1,4 @@
-class MakeAgencyAssignmentsPolymorphic < ActiveRecord::Migration
+class MakeAgencyAssignmentsPolymorphic < ActiveRecord::Migration[6.0]
   def self.up
     remove_index :agency_assignments, [:entry_id, :agency_id]
     add_column :agency_assignments, :assignable_type, :string

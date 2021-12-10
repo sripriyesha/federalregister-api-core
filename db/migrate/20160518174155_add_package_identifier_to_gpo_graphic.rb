@@ -1,4 +1,4 @@
-class AddPackageIdentifierToGpoGraphic < ActiveRecord::Migration
+class AddPackageIdentifierToGpoGraphic < ActiveRecord::Migration[6.0]
   def self.up
     add_column :gpo_graphics, :package_identifier, :string
   end

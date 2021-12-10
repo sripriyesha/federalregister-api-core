@@ -1,4 +1,4 @@
-class CreateDictionaryWords < ActiveRecord::Migration
+class CreateDictionaryWords < ActiveRecord::Migration[6.0]
   def self.up
     create_table :dictionary_words do |t|
       t.string :word

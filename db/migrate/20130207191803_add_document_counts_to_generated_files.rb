@@ -1,4 +1,4 @@
-class AddDocumentCountsToGeneratedFiles < ActiveRecord::Migration
+class AddDocumentCountsToGeneratedFiles < ActiveRecord::Migration[6.0]
   def self.up
     add_column :generated_files, :total_document_count, :integer
     add_column :generated_files, :processed_document_count, :integer

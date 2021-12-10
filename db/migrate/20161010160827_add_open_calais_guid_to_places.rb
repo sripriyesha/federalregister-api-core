@@ -1,4 +1,4 @@
-class AddOpenCalaisGuidToPlaces < ActiveRecord::Migration
+class AddOpenCalaisGuidToPlaces < ActiveRecord::Migration[6.0]
   def self.up
     add_column :places, :open_calais_guid, :string, :limit => 100
     add_index :places, :open_calais_guid, :unique => true

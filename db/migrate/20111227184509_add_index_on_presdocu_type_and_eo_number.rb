@@ -1,4 +1,4 @@
-class AddIndexOnPresdocuTypeAndEoNumber < ActiveRecord::Migration
+class AddIndexOnPresdocuTypeAndEoNumber < ActiveRecord::Migration[6.0]
   def self.up
     add_index :entries, [:presidential_document_type_id, :executive_order_number], :name => "presdocu_type_id_and_eo_number"
     remove_index :entries, :presidential_document_type_id

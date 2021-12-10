@@ -1,4 +1,4 @@
-class ReindexTopicAssignments < ActiveRecord::Migration
+class ReindexTopicAssignments < ActiveRecord::Migration[6.0]
   def self.up
     add_index :topic_assignments, [:entry_id, :topic_id]
     add_index :topic_assignments, [:topic_id, :entry_id]

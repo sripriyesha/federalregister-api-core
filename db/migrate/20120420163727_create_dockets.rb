@@ -1,4 +1,4 @@
-class CreateDockets < ActiveRecord::Migration
+class CreateDockets < ActiveRecord::Migration[6.0]
   def self.up
     create_table :dockets, :id => false do |t|
       t.string :id, :primary => true

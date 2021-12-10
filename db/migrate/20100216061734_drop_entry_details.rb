@@ -1,4 +1,4 @@
-class DropEntryDetails < ActiveRecord::Migration
+class DropEntryDetails < ActiveRecord::Migration[6.0]
   def self.up
     drop_table :entry_details
   end

@@ -1,4 +1,4 @@
-class AddSearchTypeToMailingLists < ActiveRecord::Migration
+class AddSearchTypeToMailingLists < ActiveRecord::Migration[6.0]
   def self.up
     add_column :mailing_lists, :search_type, :string
     connection.execute("UPDATE mailing_lists SET search_type = 'Entry'")

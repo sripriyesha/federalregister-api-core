@@ -1,4 +1,4 @@
-class AddMissingTimestampColumns < ActiveRecord::Migration
+class AddMissingTimestampColumns < ActiveRecord::Migration[6.0]
   def self.up
     add_column :dockets, :created_at, :datetime
     add_column :dockets, :updated_at, :datetime

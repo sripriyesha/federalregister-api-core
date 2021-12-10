@@ -1,4 +1,4 @@
-class RemoveLegacyPresidentialDocColumns < ActiveRecord::Migration[4.2]
+class RemoveLegacyPresidentialDocColumns < ActiveRecord::Migration[6.0][4.2]
 
   def self.up
     change_table(:entries) do |t|

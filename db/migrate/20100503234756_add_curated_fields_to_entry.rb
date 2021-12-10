@@ -1,4 +1,4 @@
-class AddCuratedFieldsToEntry < ActiveRecord::Migration
+class AddCuratedFieldsToEntry < ActiveRecord::Migration[6.0]
   def self.up
     rename_column :entries, :headline, :curated_title
     add_column :entries, :curated_abstract, :string

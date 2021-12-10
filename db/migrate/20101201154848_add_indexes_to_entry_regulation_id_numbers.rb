@@ -1,4 +1,4 @@
-class AddIndexesToEntryRegulationIdNumbers < ActiveRecord::Migration
+class AddIndexesToEntryRegulationIdNumbers < ActiveRecord::Migration[6.0]
   def self.up
     add_index :entry_regulation_id_numbers, [:regulation_id_number, :entry_id], :name => "rin_then_entry"
   end

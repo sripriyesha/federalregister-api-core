@@ -1,4 +1,4 @@
-class AddCitingEntriesCountToEntries < ActiveRecord::Migration
+class AddCitingEntriesCountToEntries < ActiveRecord::Migration[6.0]
   def self.up
     add_column :entries, :citing_entries_count, :integer, :default => 0
     execute 'DROP TABLE IF EXISTS citation_counts'

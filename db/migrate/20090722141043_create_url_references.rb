@@ -1,4 +1,4 @@
-class CreateUrlReferences < ActiveRecord::Migration
+class CreateUrlReferences < ActiveRecord::Migration[6.0]
   def self.up
     create_table :url_references do |t|
       t.belongs_to :url

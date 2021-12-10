@@ -1,4 +1,4 @@
-class AddRegulationsdotgovInfoToEntries < ActiveRecord::Migration
+class AddRegulationsdotgovInfoToEntries < ActiveRecord::Migration[6.0]
   def self.up
     add_column :entries, :regulationsdotgov_id, :string
     add_column :entries, :comment_url, :string

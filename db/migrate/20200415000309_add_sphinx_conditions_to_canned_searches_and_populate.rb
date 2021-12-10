@@ -1,4 +1,4 @@
-class AddSphinxConditionsToCannedSearchesAndPopulate < ActiveRecord::Migration[6.0]
+class AddSphinxConditionsToCannedSearchesAndPopulate < ActiveRecord::Migration[6.0][6.0]
   def up
     add_column :canned_searches, :sphinx_conditions, :text, :limit => 16777215
 

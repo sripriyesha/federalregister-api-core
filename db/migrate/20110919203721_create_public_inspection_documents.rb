@@ -1,4 +1,4 @@
-class CreatePublicInspectionDocuments < ActiveRecord::Migration
+class CreatePublicInspectionDocuments < ActiveRecord::Migration[6.0]
   def self.up
     create_table :public_inspection_documents do |t|
       t.string   :document_number

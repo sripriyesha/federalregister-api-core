@@ -1,4 +1,4 @@
-class AddVolumeToEntries < ActiveRecord::Migration
+class AddVolumeToEntries < ActiveRecord::Migration[6.0]
   def self.up
     add_column :entries, :volume, :integer
 

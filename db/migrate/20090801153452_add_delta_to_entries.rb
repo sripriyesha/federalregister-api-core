@@ -1,4 +1,4 @@
-class AddDeltaToEntries < ActiveRecord::Migration
+class AddDeltaToEntries < ActiveRecord::Migration[6.0]
   def self.up
     add_column :entries, :delta, :boolean, :default => true, :null => false
   end

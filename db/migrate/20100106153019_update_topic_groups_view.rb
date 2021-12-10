@@ -1,4 +1,4 @@
-class UpdateTopicGroupsView < ActiveRecord::Migration
+class UpdateTopicGroupsView < ActiveRecord::Migration[6.0]
   def self.up
     execute "DROP VIEW topic_groups"
     execute "CREATE VIEW topic_groups

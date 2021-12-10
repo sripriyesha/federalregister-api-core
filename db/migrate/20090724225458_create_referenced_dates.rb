@@ -1,4 +1,4 @@
-class CreateReferencedDates < ActiveRecord::Migration
+class CreateReferencedDates < ActiveRecord::Migration[6.0]
   def self.up
     create_table :referenced_dates do |t|
       t.belongs_to :entry

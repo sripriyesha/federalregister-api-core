@@ -1,4 +1,4 @@
-class CreateRegulatoryPlans < ActiveRecord::Migration
+class CreateRegulatoryPlans < ActiveRecord::Migration[6.0]
   def self.up
     create_table :regulatory_plans do |t|
       t.string :regulation_id_number

@@ -1,4 +1,4 @@
-class AddSlugToEntriesAndAgencies < ActiveRecord::Migration
+class AddSlugToEntriesAndAgencies < ActiveRecord::Migration[6.0]
   def self.up
     add_column :agencies, :slug, :string
     add_column :entries, :slug, :text

@@ -1,4 +1,4 @@
-class AddPseudonymToAgencies < ActiveRecord::Migration
+class AddPseudonymToAgencies < ActiveRecord::Migration[6.0]
   def self.up
     add_column :agencies, :pseudonym, :string
   end

@@ -1,4 +1,4 @@
-class AddInvertedToGraphics < ActiveRecord::Migration
+class AddInvertedToGraphics < ActiveRecord::Migration[6.0]
   def self.up
     add_column :graphics, :inverted, :boolean
   end

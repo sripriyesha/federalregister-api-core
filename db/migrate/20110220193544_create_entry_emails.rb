@@ -1,4 +1,4 @@
-class CreateEntryEmails < ActiveRecord::Migration
+class CreateEntryEmails < ActiveRecord::Migration[6.0]
   def self.up
     create_table :entry_emails do |t|
       t.string  :remote_ip,      :nil => false

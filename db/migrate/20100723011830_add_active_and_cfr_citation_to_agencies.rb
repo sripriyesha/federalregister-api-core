@@ -1,4 +1,4 @@
-class AddActiveAndCfrCitationToAgencies < ActiveRecord::Migration
+class AddActiveAndCfrCitationToAgencies < ActiveRecord::Migration[6.0]
   def self.up
     add_column :agencies, :active, :boolean
     add_column :agencies, :cfr_citation, :string

@@ -1,4 +1,4 @@
-class AddFurtherDetailsToLedePhotos < ActiveRecord::Migration
+class AddFurtherDetailsToLedePhotos < ActiveRecord::Migration[6.0]
   def self.up
     add_column :lede_photos, :url, :string
     add_column :lede_photos, :crop_width, :integer

@@ -1,4 +1,4 @@
-class CreateAlternativeAgencyNames < ActiveRecord::Migration
+class CreateAlternativeAgencyNames < ActiveRecord::Migration[6.0]
   def self.up
     create_table :alternative_agency_names do |t|
       t.integer :agency_id

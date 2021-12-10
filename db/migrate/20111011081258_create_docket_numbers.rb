@@ -1,4 +1,4 @@
-class CreateDocketNumbers < ActiveRecord::Migration
+class CreateDocketNumbers < ActiveRecord::Migration[6.0]
   def self.up
     create_table :docket_numbers do |t|
       t.string  :number

@@ -1,4 +1,4 @@
-class CreateSiteNotifications < ActiveRecord::Migration
+class CreateSiteNotifications < ActiveRecord::Migration[6.0]
   def self.up
     create_table :site_notifications do |t|
       t.string :identifier

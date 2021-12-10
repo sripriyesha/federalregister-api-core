@@ -13,7 +13,7 @@ gem 'mysql2'
 # production app server
 gem 'passenger', '~> 6.0'
 gem 'nokogiri'
-gem 'curb', '0.9.0'
+gem 'curb', '0.9.11'
 gem 'http_headers', '0.0.2.3'
 gem 'geokit', '1.10.0', :require => 'geokit'
 gem 'geokit-rails'
@@ -27,10 +27,8 @@ gem 'fog-aws'
 gem 'formtastic', "~> 2.1"
 gem 'json'
 gem 'ym4r', '0.6.1'
-gem 'ffi-hunspell',
-  :git     => 'https://github.com/postmodern/ffi-hunspell.git',
-  :ref     => '91516637fdff9cef9bae66aefdd89e1b4a8b5831',
-  :require => 'ffi/hunspell'
+gem 'ffi-hunspell'
+gem 'sassc', '2.1.0'
 
 gem 'honeybadger', '~> 2.7.2'
 gem 'sitemap_generator', '~> 1.5.0'

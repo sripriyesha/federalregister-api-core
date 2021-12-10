@@ -1,4 +1,4 @@
-class AddDeltaColumnForSphinx < ActiveRecord::Migration
+class AddDeltaColumnForSphinx < ActiveRecord::Migration[6.0]
   def self.up
     # entries already had a delta column
     add_index :entries, :delta

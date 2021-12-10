@@ -1,4 +1,4 @@
-class AddEntryCountsToAgencies < ActiveRecord::Migration
+class AddEntryCountsToAgencies < ActiveRecord::Migration[6.0]
   def self.up
     add_column :agencies, :entries_count, :integer
     add_column :agencies, :entries_1_year_weekly, :text

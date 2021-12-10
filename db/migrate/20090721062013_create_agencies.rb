@@ -1,4 +1,4 @@
-class CreateAgencies < ActiveRecord::Migration
+class CreateAgencies < ActiveRecord::Migration[6.0]
   def self.up
     create_table :agencies do |t|
       t.integer :parent_id

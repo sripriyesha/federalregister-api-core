@@ -1,4 +1,4 @@
-class CreateSmallEntities < ActiveRecord::Migration
+class CreateSmallEntities < ActiveRecord::Migration[6.0]
   def self.up
     create_table :small_entities do |t|
       t.string :name

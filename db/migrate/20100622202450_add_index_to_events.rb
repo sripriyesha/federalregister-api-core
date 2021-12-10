@@ -1,4 +1,4 @@
-class AddIndexToEvents < ActiveRecord::Migration
+class AddIndexToEvents < ActiveRecord::Migration[6.0]
   def self.up
     remove_index :events, :event_type
     add_index :events, [:event_type, :entry_id, :date]

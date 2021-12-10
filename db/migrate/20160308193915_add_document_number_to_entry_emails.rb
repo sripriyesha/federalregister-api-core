@@ -1,4 +1,4 @@
-class AddDocumentNumberToEntryEmails < ActiveRecord::Migration
+class AddDocumentNumberToEntryEmails < ActiveRecord::Migration[6.0]
   def self.up
     add_column :entry_emails, :document_number, :string
 

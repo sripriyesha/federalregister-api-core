@@ -1,4 +1,4 @@
-class AddCommentsCountAndRegulationsDotGovDocumentIdToEntries < ActiveRecord::Migration[6.0]
+class AddCommentsCountAndRegulationsDotGovDocumentIdToEntries < ActiveRecord::Migration[6.0][6.0]
   def change
     change_table :entries do |t|
       t.string :regulations_dot_gov_document_id

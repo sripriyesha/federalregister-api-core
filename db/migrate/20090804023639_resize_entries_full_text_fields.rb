@@ -1,4 +1,4 @@
-class ResizeEntriesFullTextFields < ActiveRecord::Migration
+class ResizeEntriesFullTextFields < ActiveRecord::Migration[6.0]
   def self.up
     change_column :entries, :full_text, :text, :limit => 16777216
     change_column :entries, :full_text_raw, :text, :limit => 16777216
