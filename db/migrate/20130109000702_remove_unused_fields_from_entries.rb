@@ -1,6 +1,10 @@
 class RemoveUnusedFieldsFromEntries < ActiveRecord::Migration[6.0]
   def self.up
-    remove_column :entries, :type, :link, :genre, :length, :slug
+    remove_column :entries, :type
+    remove_column :entries, :link
+    remove_column :entries, :genre
+    remove_column :entries, :length
+    remove_column :entries, :slug
   end
 
   def self.down

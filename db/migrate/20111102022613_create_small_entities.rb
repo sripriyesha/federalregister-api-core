@@ -8,7 +8,7 @@ class CreateSmallEntities < ActiveRecord::Migration[6.0]
       t.integer :regulatory_plan_id
       t.integer :small_entity_id
     end
-    add_index :regulatory_plans_small_entities, [:small_entity_id, :regulatory_plan_id]
+    add_index :regulatory_plans_small_entities, [:small_entity_id, :regulatory_plan_id], :name => "index_small_entity_id_and_regulatory_plan_id"
   end
 
   def self.down

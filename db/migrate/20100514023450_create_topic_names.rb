@@ -32,7 +32,7 @@ class CreateTopicNames < ActiveRecord::Migration[6.0]
 
     execute("INSERT INTO topic_names (id, name, entries_count, created_at, updated_at) SELECT id, name, entries_count, created_at, updated_at FROM topics")
     execute("INSERT INTO topic_name_assignments (entry_id, topic_name_id, created_at, updated_at) SELECT entry_id, topic_id, created_at, updated_at FROM topic_assignments")
-    Content::TopicImporter.new.perform
+    # Content::TopicImporter.new.perform
   end
 
   def self.down

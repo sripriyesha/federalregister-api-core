@@ -2,7 +2,7 @@ class AddCitingEntriesCountToEntries < ActiveRecord::Migration[6.0]
   def self.up
     add_column :entries, :citing_entries_count, :integer, :default => 0
     execute 'DROP TABLE IF EXISTS citation_counts'
-    execute 'CREATE TEMPORARY TABLE citation_counts
+    execute 'CREATE TABLE citation_counts
              AS SELECT cited_entry_id, COUNT(*) AS count
              FROM citations
              GROUP BY cited_entry_id'

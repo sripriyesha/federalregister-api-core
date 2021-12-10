@@ -6,7 +6,7 @@ class CreatePublicInspectionIssues < ActiveRecord::Migration[6.0]
       t.datetime :special_filings_updated_at
       t.datetime :regular_filings_updated_at
     end
-    add_index :public_inspection_issues, [:published_at, :publication_date], "published_at_then_date"
+    add_index :public_inspection_issues, [:published_at, :publication_date], :name => "published_at_then_date"
 
     create_table :public_inspection_postings, :id => false do |t|
       t.integer :issue_id
