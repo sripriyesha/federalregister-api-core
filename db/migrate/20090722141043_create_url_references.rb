@@ -5,8 +5,6 @@ class CreateUrlReferences < ActiveRecord::Migration[6.0]
       t.belongs_to :entry
       t.timestamps
     end
-    add_index :url_references, :url_id
-    add_index :url_references, :entry_id
   end
 
   def self.down

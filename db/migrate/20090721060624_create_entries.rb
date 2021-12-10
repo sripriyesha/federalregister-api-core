@@ -11,7 +11,6 @@ class CreateEntries < ActiveRecord::Migration[6.0]
       t.timestamps
     end
 
-    add_index :entries, :agency_id
     add_index :entries, :document_number
   end
 

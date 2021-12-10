@@ -41,7 +41,7 @@ gem 'aws-sdk-cloudfront'
 gem 'stevedore', '0.3.0'
 
 # fork of delynn/userstamp plugin
-# gem 'activerecord-userstamp', git: 'https://github.com/criticaljuncture/userstamp', branch: 'rails_six'
+gem 'activerecord-userstamp', git: 'https://github.com/criticaljuncture/userstamp', branch: 'rails_six'
 
 gem 'active_hash', '~> 2.0'
 gem 'acts_as_list'
