@@ -1,0 +1,314 @@
+                                           Prefix Verb   URI Pattern                                                                              Controller#Action
+                                letter_opener_web        /letter_opener                                                                           LetterOpenerWeb::Engine
+                                admin_sidekiq_web        /admin/sidekiq                                                                           Sidekiq::Web
+                                       admin_home GET    /admin(.:format)                                                                         admin/special#home
+                              delete_admin_agency GET    /admin/agencies/:id/delete(.:format)                                                     admin/agencies#delete
+                                   admin_agencies GET    /admin/agencies(.:format)                                                                admin/agencies#index
+                                                  POST   /admin/agencies(.:format)                                                                admin/agencies#create
+                                 new_admin_agency GET    /admin/agencies/new(.:format)                                                            admin/agencies#new
+                                edit_admin_agency GET    /admin/agencies/:id/edit(.:format)                                                       admin/agencies#edit
+                                     admin_agency GET    /admin/agencies/:id(.:format)                                                            admin/agencies#show
+                                                  PATCH  /admin/agencies/:id(.:format)                                                            admin/agencies#update
+                                                  PUT    /admin/agencies/:id(.:format)                                                            admin/agencies#update
+                                                  DELETE /admin/agencies/:id(.:format)                                                            admin/agencies#destroy
+                   unprocessed_admin_agency_names GET    /admin/agency_names/unprocessed(.:format)                                                admin/agency_names#unprocessed
+                               admin_agency_names GET    /admin/agency_names(.:format)                                                            admin/agency_names#index
+                                                  POST   /admin/agency_names(.:format)                                                            admin/agency_names#create
+                            new_admin_agency_name GET    /admin/agency_names/new(.:format)                                                        admin/agency_names#new
+                           edit_admin_agency_name GET    /admin/agency_names/:id/edit(.:format)                                                   admin/agency_names#edit
+                                admin_agency_name GET    /admin/agency_names/:id(.:format)                                                        admin/agency_names#show
+                                                  PATCH  /admin/agency_names/:id(.:format)                                                        admin/agency_names#update
+                                                  PUT    /admin/agency_names/:id(.:format)                                                        admin/agency_names#update
+                                                  DELETE /admin/agency_names/:id(.:format)                                                        admin/agency_names#destroy
+                        admin_agency_names_issues GET    /admin/agency_names/issues(.:format)                                                     admin/agency_names/issues#index
+                                                  POST   /admin/agency_names/issues(.:format)                                                     admin/agency_names/issues#create
+                     new_admin_agency_names_issue GET    /admin/agency_names/issues/new(.:format)                                                 admin/agency_names/issues#new
+                    edit_admin_agency_names_issue GET    /admin/agency_names/issues/:id/edit(.:format)                                            admin/agency_names/issues#edit
+                         admin_agency_names_issue GET    /admin/agency_names/issues/:id(.:format)                                                 admin/agency_names/issues#show
+                                                  PATCH  /admin/agency_names/issues/:id(.:format)                                                 admin/agency_names/issues#update
+                                                  PUT    /admin/agency_names/issues/:id(.:format)                                                 admin/agency_names/issues#update
+                                                  DELETE /admin/agency_names/issues/:id(.:format)                                                 admin/agency_names/issues#destroy
+                          new_admin_canned_search GET    /admin/canned_searches/new(.:format)                                                     admin/canned_searches#new
+                    admin_section_canned_searches GET    /admin/canned_searches/:slug(.:format)                                                   admin/canned_searches#section
+                       delete_admin_canned_search GET    /admin/canned_searches/:id/delete(.:format)                                              admin/canned_searches#delete
+                            admin_canned_searches GET    /admin/canned_searches(.:format)                                                         admin/canned_searches#index
+                                                  POST   /admin/canned_searches(.:format)                                                         admin/canned_searches#create
+                                                  GET    /admin/canned_searches/new(.:format)                                                     admin/canned_searches#new
+                         edit_admin_canned_search GET    /admin/canned_searches/:id/edit(.:format)                                                admin/canned_searches#edit
+                              admin_canned_search GET    /admin/canned_searches/:id(.:format)                                                     admin/canned_searches#show
+                                                  PATCH  /admin/canned_searches/:id(.:format)                                                     admin/canned_searches#update
+                                                  PUT    /admin/canned_searches/:id(.:format)                                                     admin/canned_searches#update
+                                                  DELETE /admin/canned_searches/:id(.:format)                                                     admin/canned_searches#destroy
+                           admin_dictionary_words POST   /admin/dictionary_words(.:format)                                                        admin/dictionary_words#create
+                       admin_spelling_suggestions GET    /admin/spelling_suggestions(.:format)                                                    admin/spelling_suggestions#index
+                                 admin_index_year GET    /admin/index/:year(.:format)                                                             admin/indexes#year
+                         admin_publish_index_year POST   /admin/index/:year/publish(.:format)                                                     admin/indexes#publish
+                                 admin_sgml_index GET    /admin/index/:year/sgml(.:format)                                                        admin/indexes#sgml
+                                            admin GET    /admin/index/:year/:agency(.:format)                                                     admin/indexes#year_agency
+                          admin_index_year_agency PUT    /admin/index/:year/:agency(.:format)                                                     admin/indexes#update_year_agency
+     admin_index_year_agency_unapproved_documents GET    /admin/index/:year/:agency/unapproved-documents(.:format)                                admin/indexes#year_agency_unapproved_documents
+               admin_index_year_agency_completion PUT    /admin/index/:year/:agency/completion(.:format)                                          admin/indexes#mark_complete
+                     admin_index_year_agency_type GET    /admin/index/:year/:agency/:type(.:format)                                               admin/indexes#year_agency_type
+                             admin_generated_file GET    /admin/generated_files/:id(.:format)                                                     admin/generated_files#show
+                                     admin_topics GET    /admin/topics(.:format)                                                                  admin/topics#index
+                                                  POST   /admin/topics(.:format)                                                                  admin/topics#create
+                                  new_admin_topic GET    /admin/topics/new(.:format)                                                              admin/topics#new
+                                 edit_admin_topic GET    /admin/topics/:id/edit(.:format)                                                         admin/topics#edit
+                                      admin_topic GET    /admin/topics/:id(.:format)                                                              admin/topics#show
+                                                  PATCH  /admin/topics/:id(.:format)                                                              admin/topics#update
+                                                  PUT    /admin/topics/:id(.:format)                                                              admin/topics#update
+                                                  DELETE /admin/topics/:id(.:format)                                                              admin/topics#destroy
+                    unprocessed_admin_topic_names GET    /admin/topic_names/unprocessed(.:format)                                                 admin/topic_names#unprocessed
+                                admin_topic_names GET    /admin/topic_names(.:format)                                                             admin/topic_names#index
+                                                  POST   /admin/topic_names(.:format)                                                             admin/topic_names#create
+                             new_admin_topic_name GET    /admin/topic_names/new(.:format)                                                         admin/topic_names#new
+                            edit_admin_topic_name GET    /admin/topic_names/:id/edit(.:format)                                                    admin/topic_names#edit
+                                 admin_topic_name GET    /admin/topic_names/:id(.:format)                                                         admin/topic_names#show
+                                                  PATCH  /admin/topic_names/:id(.:format)                                                         admin/topic_names#update
+                                                  PUT    /admin/topic_names/:id(.:format)                                                         admin/topic_names#update
+                                                  DELETE /admin/topic_names/:id(.:format)                                                         admin/topic_names#destroy
+                         admin_pil_agency_letters GET    /admin/pil_agency_letters(.:format)                                                      admin/pil_agency_letters#index
+                                                  POST   /admin/pil_agency_letters(.:format)                                                      admin/pil_agency_letters#create
+                          admin_pil_agency_letter DELETE /admin/pil_agency_letters/:id(.:format)                                                  admin/pil_agency_letters#destroy
+                     admin_presidential_documents GET    /admin/presidential_documents(.:format)                                                  admin/presidential_documents#index
+                                                  POST   /admin/presidential_documents(.:format)                                                  admin/presidential_documents#create
+                      admin_presidential_document GET    /admin/presidential_documents/:id(.:format)                                              admin/presidential_documents#show
+                       info_admin_photo_candidate GET    /admin/photo_candidates/:id/info(.:format)                                               admin/photo_candidates#info
+                            admin_photo_candidate GET    /admin/photo_candidates/:id(.:format)                                                    admin/photo_candidates#show
+                                   admin_sections GET    /admin/sections(.:format)                                                                admin/sections#index
+                                                  POST   /admin/sections(.:format)                                                                admin/sections#create
+                                new_admin_section GET    /admin/sections/new(.:format)                                                            admin/sections#new
+                               edit_admin_section GET    /admin/sections/:id/edit(.:format)                                                       admin/sections#edit
+                                    admin_section GET    /admin/sections/:id(.:format)                                                            admin/sections#show
+                                                  PATCH  /admin/sections/:id(.:format)                                                            admin/sections#update
+                                                  PUT    /admin/sections/:id(.:format)                                                            admin/sections#update
+                                                  DELETE /admin/sections/:id(.:format)                                                            admin/sections#destroy
+                             admin_missing_images GET    /admin/missing_images(.:format)                                                          admin/missing_images#index
+                    admin_reprocessed_issue_diffs GET    /admin/reprocessed_issues/:reprocessed_issue_id/diffs(.:format)                          admin/reprocessed_issues/diffs#index
+                         admin_reprocessed_issues GET    /admin/reprocessed_issues(.:format)                                                      admin/reprocessed_issues#index
+                                                  POST   /admin/reprocessed_issues(.:format)                                                      admin/reprocessed_issues#create
+                          admin_reprocessed_issue GET    /admin/reprocessed_issues/:id(.:format)                                                  admin/reprocessed_issues#show
+                                                  PATCH  /admin/reprocessed_issues/:id(.:format)                                                  admin/reprocessed_issues#update
+                                                  PUT    /admin/reprocessed_issues/:id(.:format)                                                  admin/reprocessed_issues#update
+                                                  DELETE /admin/reprocessed_issues/:id(.:format)                                                  admin/reprocessed_issues#destroy
+                                admin_update_mods PUT    /admin/reprocessed_issues_update_mods/:id(.:format)                                      admin/reprocessed_issues#update_mods
+                              preview_admin_issue GET    /admin/issues/:id/preview(.:format)                                                      admin/issues#preview
+                         new_admin_issue_approval GET    /admin/issues/:issue_id/approval/new(.:format)                                           admin/issues/approvals#new
+                        edit_admin_issue_approval GET    /admin/issues/:issue_id/approval/edit(.:format)                                          admin/issues/approvals#edit
+                             admin_issue_approval GET    /admin/issues/:issue_id/approval(.:format)                                               admin/issues/approvals#show
+                                                  PATCH  /admin/issues/:issue_id/approval(.:format)                                               admin/issues/approvals#update
+                                                  PUT    /admin/issues/:issue_id/approval(.:format)                                               admin/issues/approvals#update
+                                                  DELETE /admin/issues/:issue_id/approval(.:format)                                               admin/issues/approvals#destroy
+                                                  POST   /admin/issues/:issue_id/approval(.:format)                                               admin/issues/approvals#create
+                              admin_issue_entries GET    /admin/issues/:issue_id/entries(.:format)                                                admin/issues/entries#index
+                                                  POST   /admin/issues/:issue_id/entries(.:format)                                                admin/issues/entries#create
+                            new_admin_issue_entry GET    /admin/issues/:issue_id/entries/new(.:format)                                            admin/issues/entries#new
+                           edit_admin_issue_entry GET    /admin/issues/:issue_id/entries/:id/edit(.:format)                                       admin/issues/entries#edit
+                                admin_issue_entry GET    /admin/issues/:issue_id/entries/:id(.:format)                                            admin/issues/entries#show
+                                                  PATCH  /admin/issues/:issue_id/entries/:id(.:format)                                            admin/issues/entries#update
+                                                  PUT    /admin/issues/:issue_id/entries/:id(.:format)                                            admin/issues/entries#update
+                                                  DELETE /admin/issues/:issue_id/entries/:id(.:format)                                            admin/issues/entries#destroy
+                      preview_admin_issue_section GET    /admin/issues/:issue_id/sections/:id/preview(.:format)                                   admin/issues/sections#preview
+                   admin_issue_section_highlights GET    /admin/issues/:issue_id/sections/:section_id/highlights(.:format)                        admin/issues/sections/highlights#index
+                                                  POST   /admin/issues/:issue_id/sections/:section_id/highlights(.:format)                        admin/issues/sections/highlights#create
+                new_admin_issue_section_highlight GET    /admin/issues/:issue_id/sections/:section_id/highlights/new(.:format)                    admin/issues/sections/highlights#new
+               edit_admin_issue_section_highlight GET    /admin/issues/:issue_id/sections/:section_id/highlights/:id/edit(.:format)               admin/issues/sections/highlights#edit
+                    admin_issue_section_highlight GET    /admin/issues/:issue_id/sections/:section_id/highlights/:id(.:format)                    admin/issues/sections/highlights#show
+                                                  PATCH  /admin/issues/:issue_id/sections/:section_id/highlights/:id(.:format)                    admin/issues/sections/highlights#update
+                                                  PUT    /admin/issues/:issue_id/sections/:section_id/highlights/:id(.:format)                    admin/issues/sections/highlights#update
+                                                  DELETE /admin/issues/:issue_id/sections/:section_id/highlights/:id(.:format)                    admin/issues/sections/highlights#destroy
+                             admin_issue_sections GET    /admin/issues/:issue_id/sections(.:format)                                               admin/issues/sections#index
+                                                  POST   /admin/issues/:issue_id/sections(.:format)                                               admin/issues/sections#create
+                          new_admin_issue_section GET    /admin/issues/:issue_id/sections/new(.:format)                                           admin/issues/sections#new
+                         edit_admin_issue_section GET    /admin/issues/:issue_id/sections/:id/edit(.:format)                                      admin/issues/sections#edit
+                              admin_issue_section GET    /admin/issues/:issue_id/sections/:id(.:format)                                           admin/issues/sections#show
+                                                  PATCH  /admin/issues/:issue_id/sections/:id(.:format)                                           admin/issues/sections#update
+                                                  PUT    /admin/issues/:issue_id/sections/:id(.:format)                                           admin/issues/sections#update
+                                                  DELETE /admin/issues/:issue_id/sections/:id(.:format)                                           admin/issues/sections#destroy
+                                     admin_issues GET    /admin/issues(.:format)                                                                  admin/issues#index
+                                                  POST   /admin/issues(.:format)                                                                  admin/issues#create
+                                  new_admin_issue GET    /admin/issues/new(.:format)                                                              admin/issues#new
+                                 edit_admin_issue GET    /admin/issues/:id/edit(.:format)                                                         admin/issues#edit
+                                      admin_issue GET    /admin/issues/:id(.:format)                                                              admin/issues#show
+                                                  PATCH  /admin/issues/:id(.:format)                                                              admin/issues#update
+                                                  PUT    /admin/issues/:id(.:format)                                                              admin/issues#update
+                                                  DELETE /admin/issues/:id(.:format)                                                              admin/issues#destroy
+                            admin_highlight_entry GET    /admin/entries/:id/highlight(.:format)                                                   admin/issues/entries#highlight
+                            admin_password_resets POST   /admin/password_resets(.:format)                                                         admin/password_resets#create
+                         new_admin_password_reset GET    /admin/password_resets/new(.:format)                                                     admin/password_resets#new
+                        edit_admin_password_reset GET    /admin/password_resets/:id/edit(.:format)                                                admin/password_resets#edit
+                             admin_password_reset PATCH  /admin/password_resets/:id(.:format)                                                     admin/password_resets#update
+                                                  PUT    /admin/password_resets/:id(.:format)                                                     admin/password_resets#update
+                          new_admin_user_password GET    /admin/users/:user_id/password/new(.:format)                                             admin/users/passwords#new
+                         edit_admin_user_password GET    /admin/users/:user_id/password/edit(.:format)                                            admin/users/passwords#edit
+                              admin_user_password GET    /admin/users/:user_id/password(.:format)                                                 admin/users/passwords#show
+                                                  PATCH  /admin/users/:user_id/password(.:format)                                                 admin/users/passwords#update
+                                                  PUT    /admin/users/:user_id/password(.:format)                                                 admin/users/passwords#update
+                                                  DELETE /admin/users/:user_id/password(.:format)                                                 admin/users/passwords#destroy
+                                                  POST   /admin/users/:user_id/password(.:format)                                                 admin/users/passwords#create
+                                      admin_users GET    /admin/users(.:format)                                                                   admin/users#index
+                                                  POST   /admin/users(.:format)                                                                   admin/users#create
+                                   new_admin_user GET    /admin/users/new(.:format)                                                               admin/users#new
+                                  edit_admin_user GET    /admin/users/:id/edit(.:format)                                                          admin/users#edit
+                                       admin_user GET    /admin/users/:id(.:format)                                                               admin/users#show
+                                                  PATCH  /admin/users/:id(.:format)                                                               admin/users#update
+                                                  PUT    /admin/users/:id(.:format)                                                               admin/users#update
+                                                  DELETE /admin/users/:id(.:format)                                                               admin/users#destroy
+                           new_admin_user_session GET    /admin/user_session/new(.:format)                                                        admin/user_sessions#new
+                          edit_admin_user_session GET    /admin/user_session/edit(.:format)                                                       admin/user_sessions#edit
+                               admin_user_session GET    /admin/user_session(.:format)                                                            admin/user_sessions#show
+                                                  PATCH  /admin/user_session(.:format)                                                            admin/user_sessions#update
+                                                  PUT    /admin/user_session(.:format)                                                            admin/user_sessions#update
+                                                  DELETE /admin/user_session(.:format)                                                            admin/user_sessions#destroy
+                                                  POST   /admin/user_session(.:format)                                                            admin/user_sessions#create
+                         admin_site_notifications GET    /admin/site_notifications(.:format)                                                      admin/site_notifications#index
+                     edit_admin_site_notification GET    /admin/site_notifications/:id/edit(.:format)                                             admin/site_notifications#edit
+                          admin_site_notification PATCH  /admin/site_notifications/:id(.:format)                                                  admin/site_notifications#update
+                                                  PUT    /admin/site_notifications/:id(.:format)                                                  admin/site_notifications#update
+                                      admin_login GET    /admin/login(.:format)                                                                   admin/user_sessions#new
+                                     admin_logout GET    /admin/logout(.:format)                                                                  admin/user_sessions#destroy
+                             api_v1_documentation GET    /api/v1/documentation(.:format)                                                          api/v1/documentation#show {:format=>"json"}
+                           api_v1_effective_dates GET    /api/v1/effective-dates(.:format)                                                        api/v1/effective_dates#index {:format=>"json"}
+                           api_v1_articles_facets GET    /api/v1/documents/facets/:facet(.:format)                                                api/v1/entries#facets {:format=>"json"}
+        api_v1_public_inspection_documents_facets GET    /api/v1/public-inspection-documents/facets/:facet(.:format)                              api/v1/public_inspection_documents#facets {:format=>"json"}
+           api_v1_public_inspection_issues_facets GET    /api/v1/public-inspection-issues/facets/:facet(.:format)                                 api/v1/public_inspection_issues#facets {:format=>"json"}
+                   api_v1_articles_search_details GET    /api/v1/documents/search-details(.:format)                                               api/v1/entries#search_details {:format=>"json"}
+api_v1_public_inspection_documents_search_details GET    /api/v1/public-inspection-documents/search-details(.:format)                             api/v1/public_inspection_documents#search_details {:format=>"json"}
+                                 api_v1_documents GET    /api/v1/documents(.:format)                                                              api/v1/entries#index {:format=>"json"}
+                                  api_v1_document GET    /api/v1/documents/:id(.:format)                                                          api/v1/entries#show {:format=>"json"}
+                        api_v1_agency_suggestions GET    /api/v1/agencies/suggestions(.:format)                                                   api/v1/agencies#suggestions {:format=>"json"}
+                                  api_v1_agencies GET    /api/v1/agencies(.:format)                                                               api/v1/agencies#index {:format=>"json"}
+                                    api_v1_agency GET    /api/v1/agencies/:id(.:format)                                                           api/v1/agencies#show {:format=>"json"}
+               api_v1_public_inspection_documents GET    /api/v1/public_inspection_documents(.:format)                                            api/v1/public_inspection_documents#index {:format=>"json"}
+                api_v1_public_inspection_document GET    /api/v1/public_inspection_documents/:id(.:format)                                        api/v1/public_inspection_documents#show {:format=>"json"}
+                                                  GET    /api/v1/public-inspection-documents(.:format)                                            api/v1/public_inspection_documents#index {:format=>"json"}
+       api_v1_public_inspection_documents_current GET    /api/v1/public-inspection-documents/current(.:format)                                    api/v1/public_inspection_documents#current {:format=>"json"}
+                                           api_v1 GET    /api/v1/public-inspection-documents/:id(.:format)                                        api/v1/public_inspection_documents#show {:format=>"json"}
+                         api_v1_site_notification GET    /api/v1/site_notifications/:id(.:format)                                                 api/v1/site_notifications#show {:format=>"json"}
+                                  api_v1_sections GET    /api/v1/sections(.:format)                                                               api/v1/sections#index {:format=>"json"}
+                        api_v1_suggested_searches GET    /api/v1/suggested_searches(.:format)                                                     api/v1/suggested_searches#index {:format=>"json"}
+                          api_v1_suggested_search GET    /api/v1/suggested_searches/:id(.:format)                                                 api/v1/suggested_searches#show {:format=>"json"}
+                                  api_v1_holidays GET    /api/v1/holidays(.:format)                                                               api/v1/holidays#index {:format=>"json"}
+                         api_v1_topic_suggestions GET    /api/v1/topics/suggestions(.:format)                                                     api/v1/topics#suggestions {:format=>"json"}
+                                  status_api_core GET    /status/api-core/:id(.:format)                                                           special#status {:quiet=>"true"}
+                                                  GET    /status/api-core(.:format)                                                               special#status {:quiet=>"true"}
+                                           status GET    /status(.:format)                                                                        special#status {:quiet=>"true"}
+                              layout_head_content GET    /layout/head_content(.:format)                                                           special#layout_head_content {:quiet=>"true"}
+                                    layout_header GET    /layout/header(.:format)                                                                 special#layout_header {:quiet=>"true"}
+                                  popular_entries GET    /popular_entries(.:format)                                                               special#popular_entries {:quiet=>"true"}
+                             most_emailed_entries GET    /most_emailed_entries(.:format)                                                          special#most_emailed_entries {:quiet=>"true"}
+                              sections_navigation GET    /sections/navigation(.:format)                                                           sections#navigation {:quiet=>"true"}
+                              agencies_navigation GET    /agencies/navigation(.:format)                                                           agencies#navigation {:quiet=>"true"}
+                                topics_navigation GET    /topics/navigation(.:format)                                                             topics#navigation {:quiet=>"true"}
+                                  date_navigation GET    /articles/navigation(.:format)                                                           entries#navigation {:quiet=>"true"}
+                                    pi_navigation GET    /public_inspection/navigation(.:format)                                                  public_inspection#navigation {:quiet=>"true"}
+                      executive_orders_navigation GET    /executive_orders/navigation(.:format)                                                   executive_orders#navigation {:quiet=>"true"}
+                                 entries_by_month GET    /articles/:year/:month(.:format)                                                         entries#by_month {:quiet=>"true", :year=>/\d{4}/, :month=>/\d{1,2}/}
+                            entries_search_header GET    /articles/search/header(.:format)                                                        entries/search#header {:quiet=>"true"}
+                           entries_search_results GET    /articles/search/results(.:format)                                                       entries/search#results {:quiet=>"true"}
+                       entries_search_suggestions GET    /articles/search/suggestions(.:format)                                                   entries/search#suggestions {:quiet=>"true"}
+                            entries_search_facets GET    /articles/search/facets/:facet(.:format)                                                 entries/search#facets {:quiet=>"true"}
+             public_inspection_documents_by_month GET    /public-inspection/:year/:month(.:format)                                                public_inspection#by_month {:quiet=>"true", :year=>/\d{4}/, :month=>/\d{1,2}/}
+                  public_inspection_search_header GET    /public-inspection/search/header(.:format)                                               public_inspection/search#header {:quiet=>"true"}
+                 public_inspection_search_results GET    /public-inspection/search/results(.:format)                                              public_inspection/search#results {:quiet=>"true"}
+                  public_inspection_search_facets GET    /public-inspection/search/facets/:facet(.:format)                                        public_inspection/search#facets {:quiet=>"true"}
+                              event_search_header GET    /events/search/header(.:format)                                                          events/search#header {:quiet=>"true"}
+                             event_search_results GET    /events/search/results(.:format)                                                         events/search#results {:quiet=>"true"}
+                              event_search_facets GET    /events/search/facets/:facet(.:format)                                                   events/search#facets {:quiet=>"true"}
+                         regulatory_plan_timeline GET    /regulations/:regulation_id_number/timeline(.:format)                                    regulatory_plans#timeline {:quiet=>"true"}
+                    regulatory_plan_search_header GET    /regulations/search/header(.:format)                                                     regulatory_plans/search#header {:quiet=>"true"}
+                   regulatory_plan_search_results GET    /regulations/search/results(.:format)                                                    regulatory_plans/search#results {:quiet=>"true"}
+                    regulatory_plan_search_facets GET    /regulations/search/facets/:facet(.:format)                                              regulatory_plans/search#facets {:quiet=>"true"}
+                          popular_entries_section GET    /:slug/popular_entries(.:format)                                                         sections#popular_entries {:quiet=>"true"}
+                     most_emailed_entries_section GET    /:slug/most_emailed_entries(.:format)                                                    sections#most_emailed_entries {:quiet=>"true"}
+                           popular_topics_section GET    /:slug/popular_topics(.:format)                                                          sections#popular_topics {:quiet=>"true"}
+                          featured_agency_section GET    /:slug/featured_agency(.:format)                                                         sections#featured_agency {:quiet=>"true"}
+                           index_year_agency_type GET    /index/:year/:agency/:type(.:format)                                                     indexes#year_agency_type {:quiet=>"true"}
+                                             root GET    /                                                                                        special#home
+                                                  GET    /                                                                                        special#home
+                                                  GET    /robots.txt(.:format)                                                                    special#robots_dot_txt
+                                   entries_search GET    /articles/search(.:format)                                                               entries/search#show
+                              entries_search_help GET    /articles/search/help(.:format)                                                          entries/search#help
+                entries_search_activity_sparkline GET    /articles/search/activity/sparkline/:period(.:format)                                    entries/search#activity_sparkline
+                               entries_page_views POST   /articles/views(.:format)                                                                entries/page_views#create
+                           document_abstract_text GET    /documents/html/abstract/:id(.:format)                                                   entries#abstract_text
+                               document_full_text GET    /documents/html/full_text/:id(.:format)                                                  entries#full_text
+                                          entries GET    /articles(.:format)                                                                      entries#index
+                              highlighted_entries GET    /articles/featured(.:format)                                                             entries#highlighted
+                             entries_search_facet GET    /articles/search/facet(.:format)                                                         entries#search_facet
+                                   entries_widget GET    /articles/widget(.:format)                                                               entries#widget
+                                            entry GET    /documents/:year/:month/:day/:document_number/:slug(.:format)                            entries#show {:year=>/\d{4}/, :month=>/\d{1,2}/, :day=>/\d{1,2}/, :slug=>/[^\/]+/}
+                                                  GET    /d/:document_number(.:format)                                                            entries#tiny_url
+                                                  GET    /d/:document_number/:anchor(.:format)                                                    entries#tiny_url
+                                   entry_citation GET    /citations/:year/:month/:day/:document_number/:slug(.:format)                            entries#citations {:year=>/\d{4}/, :month=>/\d{1,2}/, :day=>/\d{1,2}/}
+                            entries_current_issue GET    /articles/current(.:format)                                                              entries#current_issue
+                                  entries_by_date GET    /articles/:year/:month/:day(.:format)                                                    entries#by_date {:year=>/\d{4}/, :month=>/\d{1,2}/, :day=>/\d{1,2}/}
+                              entries_date_search GET    /articles/date_search(.:format)                                                          entries#date_search
+                                     random_entry GET    /a/random(.:format)                                                                      entries#random
+                                      short_entry GET    /a/:document_number(.:format)                                                            entries#tiny_url
+                          short_entry_with_anchor GET    /a/:document_number/:anchor(.:format)                                                    entries#tiny_url
+                                 executive_orders GET    /executive-orders(.:format)                                                              executive_orders#index
+           executive_orders_by_president_and_year GET    /executive-orders/:president/:year(.:format)                                             executive_orders#by_president_and_year
+                                  executive_order GET    /executive-order/:number(.:format)                                                       executive_orders#show {:number=>/\d+/}
+                                                  GET    /citation/:volume/:page(.:format)                                                        citations#show {:volume=>/\d+/, :page=>/\d+/}
+                                         citation GET    /citation/:fr_citation(.:format)                                                         citations#show {:fr_citation=>/\d+-FR-\d+/}
+                                  citation_search GET    /citation/search(.:format)                                                               citations#search
+                                  new_entry_email GET    /articles/email-a-friend/:document_number(.:format)                                      entries/emails#new
+                                      entry_email POST   /articles/email-a-friend/:document_number(.:format)                                      entries/emails#create
+                            delivered_entry_email GET    /articles/email-a-friend/:document_number/delivered(.:format)                            entries/emails#delivered
+                      public_inspection_documents GET    /public-inspection(.:format)                                                             public_inspection#index
+                       public_inspection_document GET    /public-inspection/:document_number/:slug(.:format)                                      public_inspection_documents#show {:slug=>/[^\/]+/}
+              public_inspection_documents_by_date GET    /public-inspection/:year/:month/:day(.:format)                                           public_inspection#by_date {:year=>/\d{4}/, :month=>/\d{1,2}/, :day=>/\d{1,2}/}
+                         public_inspection_search GET    /public-inspection/search(.:format)                                                      public_inspection/search#show
+                                            index GET    /index(.:format)                                                                         indexes#select_year
+                                       index_year GET    /index/:year(.:format)                                                                   indexes#year
+                                index_year_agency GET    /index/:year/:agency(.:format)                                                           indexes#year_agency
+                                select_index_year GET    /select_index_year(.:format)                                                             indexes#select_year
+                                    events_search GET    /events/search(.:format)                                                                 events/search#show
+                                            event GET    /events/:id(.:format)                                                                    events#show
+                                    search_topics GET    /topics/search(.:format)                                                                 topics#search
+                                           topics GET    /topics(.:format)                                                                        topics#index
+                                            topic GET    /topics/:id(.:format)                                                                    topics#show
+                        significant_entries_topic GET    /topics/:id/significant(.:format)                                                        topics#significant_entries
+                                  search_agencies GET    /agencies/search(.:format)                                                               agencies#search
+                                         agencies GET    /agencies(.:format)                                                                      agencies#index
+                                           agency GET    /agencies/:id(.:format)                                                                  agencies#show
+                       significant_entries_agency GET    /agencies/:id/significant(.:format)                                                      agencies#significant_entries
+                          regulatory_plans_search GET    /regulations/search(.:format)                                                            regulatory_plans/search#show
+                                  regulatory_plan GET    /regulations/:regulation_id_number/:slug(.:format)                                       regulatory_plans#show
+                                                  GET    /regulations/:regulation_id_number.js(.:format)                                          regulatory_plans#json_summary {:format=>/js/}
+                            short_regulatory_plan GET    /r/:regulation_id_number(.:format)                                                       regulatory_plans#tiny_url
+                                     cfr_citation GET    /external-citation/:year/:citation(.:format)                                             external_citations#cfr_citation {:citation=>/\d+-CFR-\d+(?:\.\d+)?/}
+                              select_cfr_citation GET    /select-citation/:year/:month/:day/:citation(.:format)                                   external_citations#select_cfr_citation {:citation=>/\d+-CFR-\d+(?:\.\d+)?/}
+                                    canned_search GET    /:slug(.:format)                                                                         canned_searches#show
+                                    about_section GET    /:slug/about(.:format)                                                                   sections#about
+                      highlighted_entries_section GET    /:slug/featured(.:format)                                                                sections#highlighted_entries
+                      significant_entries_section GET    /:slug/significant(.:format)                                                             sections#significant_entries
+                                          section GET    /:slug(.:format)                                                                         sections#show
+                    rails_postmark_inbound_emails POST   /rails/action_mailbox/postmark/inbound_emails(.:format)                                  action_mailbox/ingresses/postmark/inbound_emails#create
+                       rails_relay_inbound_emails POST   /rails/action_mailbox/relay/inbound_emails(.:format)                                     action_mailbox/ingresses/relay/inbound_emails#create
+                    rails_sendgrid_inbound_emails POST   /rails/action_mailbox/sendgrid/inbound_emails(.:format)                                  action_mailbox/ingresses/sendgrid/inbound_emails#create
+              rails_mandrill_inbound_health_check GET    /rails/action_mailbox/mandrill/inbound_emails(.:format)                                  action_mailbox/ingresses/mandrill/inbound_emails#health_check
+                    rails_mandrill_inbound_emails POST   /rails/action_mailbox/mandrill/inbound_emails(.:format)                                  action_mailbox/ingresses/mandrill/inbound_emails#create
+                     rails_mailgun_inbound_emails POST   /rails/action_mailbox/mailgun/inbound_emails/mime(.:format)                              action_mailbox/ingresses/mailgun/inbound_emails#create
+                   rails_conductor_inbound_emails GET    /rails/conductor/action_mailbox/inbound_emails(.:format)                                 rails/conductor/action_mailbox/inbound_emails#index
+                                                  POST   /rails/conductor/action_mailbox/inbound_emails(.:format)                                 rails/conductor/action_mailbox/inbound_emails#create
+                new_rails_conductor_inbound_email GET    /rails/conductor/action_mailbox/inbound_emails/new(.:format)                             rails/conductor/action_mailbox/inbound_emails#new
+               edit_rails_conductor_inbound_email GET    /rails/conductor/action_mailbox/inbound_emails/:id/edit(.:format)                        rails/conductor/action_mailbox/inbound_emails#edit
+                    rails_conductor_inbound_email GET    /rails/conductor/action_mailbox/inbound_emails/:id(.:format)                             rails/conductor/action_mailbox/inbound_emails#show
+                                                  PATCH  /rails/conductor/action_mailbox/inbound_emails/:id(.:format)                             rails/conductor/action_mailbox/inbound_emails#update
+                                                  PUT    /rails/conductor/action_mailbox/inbound_emails/:id(.:format)                             rails/conductor/action_mailbox/inbound_emails#update
+                                                  DELETE /rails/conductor/action_mailbox/inbound_emails/:id(.:format)                             rails/conductor/action_mailbox/inbound_emails#destroy
+            rails_conductor_inbound_email_reroute POST   /rails/conductor/action_mailbox/:inbound_email_id/reroute(.:format)                      rails/conductor/action_mailbox/reroutes#create
+                               rails_service_blob GET    /rails/active_storage/blobs/:signed_id/*filename(.:format)                               active_storage/blobs#show
+                        rails_blob_representation GET    /rails/active_storage/representations/:signed_blob_id/:variation_key/*filename(.:format) active_storage/representations#show
+                               rails_disk_service GET    /rails/active_storage/disk/:encoded_key/*filename(.:format)                              active_storage/disk#show
+                        update_rails_disk_service PUT    /rails/active_storage/disk/:encoded_token(.:format)                                      active_storage/disk#update
+                             rails_direct_uploads POST   /rails/active_storage/direct_uploads(.:format)                                           active_storage/direct_uploads#create
+
+Routes for LetterOpenerWeb::Engine:
+      letters GET  /                                letter_opener_web/letters#index
+clear_letters POST /clear(.:format)                 letter_opener_web/letters#clear
+       letter GET  /:id(/:style)(.:format)          letter_opener_web/letters#show
+delete_letter POST /:id/delete(.:format)            letter_opener_web/letters#destroy
+              GET  /:id/attachments/:file(.:format) letter_opener_web/letters#attachment
